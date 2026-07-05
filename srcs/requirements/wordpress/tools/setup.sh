@@ -48,6 +48,13 @@ if [ ! -f wp-config.php ]; then
         --user_pass="$WP_USER_PASSWORD" \
         --role=author \
         --allow-root
+    echo "configuring Redis..."
+    wp config set WP_REDIS_HOST redis --allow-root
+    wp config set WP_REDIS_PORT 6379 --allow-root
+    wp config set WP_CACHE true --allow-root
+
+
+
 
     chown -R www-data:www-data /var/www/html
 fi
