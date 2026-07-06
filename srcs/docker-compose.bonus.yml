@@ -15,3 +15,18 @@ services:
       - "8080:8080"
     depends_on:
       - mariadb
+  ftp:
+    build: ./requirements/bonus/ftp_server
+    container_name: ftp
+    restart: always
+    ports:
+      - "21:21"
+      - "21100-21110:21100-21110"
+    volumes:
+      - wordpress:/var/www/html
+    networks:
+      - inception
+    env_file:
+      - .env
+    depends_on:
+      - wordpress
