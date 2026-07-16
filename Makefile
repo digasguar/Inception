@@ -4,6 +4,8 @@ COMPOSE = docker compose -f srcs/docker-compose.yml
 BONUS = -f srcs/docker-compose.bonus.yml
 
 up:
+	mkdir -p /home/dgasco-g/data/mariadb
+	mkdir -p /home/dgasco-g/data/wordpress
 	$(COMPOSE) up --build -d
 
 down:
