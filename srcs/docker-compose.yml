@@ -49,13 +49,13 @@ volumes:
   wordpress:
     driver: local
     driver_opts:
-    type: none
-    o: bind
-    device: /home/dgasco-g/data/wordpress
+      type: none
+      o: bind
+      device: /home/dgasco-g/data/wordpress
     
   mariadb:
     driver: local
     driver_opts:
-    type: none
-    o: bind
-    device: /home/dgasco-g/data/mariadb
+      type: none
+      o: bind
+      device: /home/dgasco-g/data/mariadb
