@@ -12,6 +12,8 @@ down:
 	$(COMPOSE) down
 
 bonus:
+	mkdir -p /home/dgasco-g/data/mariadb
+	mkdir -p /home/dgasco-g/data/wordpress
 	$(COMPOSE) $(BONUS) up --build -d
 
 bonus-down:
