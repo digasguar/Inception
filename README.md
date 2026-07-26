@@ -188,10 +188,6 @@ Adminer
 MariaDB
 ```
 
----
-
-
-
 # 🚀 Ejecución
 
 Construir los contenedores:
