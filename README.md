@@ -190,32 +190,7 @@ MariaDB
 
 ---
 
-# 📦 Instalación
 
-Clonar el repositorio:
-
-```bash
-git clone <repository_url>
-
-cd inception
-```
-
-Crear el fichero de variables de entorno:
-
-```bash
-mkdir -p secrets
-```
-
-Configurar las variables necesarias:
-
-```text
-DOMAIN_NAME=
-MYSQL_DATABASE=
-MYSQL_USER=
-MYSQL_PASSWORD=
-```
-
----
 
 # 🚀 Ejecución
 
